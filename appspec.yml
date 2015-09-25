@@ -10,8 +10,8 @@ permissions:
     group: www-data
     mode: 775
     acls: 
-      - u:www-data:rwX 
-      - u:ubuntu:rwX 
+      - u:www-data:rwx
+      - u:ubuntu:rwx
       - m::r 
     type:
       - directory
