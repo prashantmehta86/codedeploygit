@@ -2,7 +2,19 @@ version: 0.0
 os: linux
 files:
   - source: /index.html
-    destination: /var/www/html/
+    destination: /var/www/
+permissions:
+  - object: /var/www/
+    pattern: "*"
+    owner: root
+    group: www-data
+    mode: 775
+    acls: 
+      - u:www-data:rwX 
+      - u:ubuntu:rwX 
+      - m::r 
+    type:
+      - directory
 hooks:
   BeforeInstall:
     - location: scripts/install_dependencies
