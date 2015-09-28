@@ -11,7 +11,7 @@ permissions:
     mode: 644
     acls: 
       - u:www-data:rwx
-      - u:ubuntu:rwx
+      - u:ubuntu:rwX
       - m::r 
     type:
       - directory
