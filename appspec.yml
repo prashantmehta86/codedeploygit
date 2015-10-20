@@ -3,6 +3,8 @@ os: linux
 files:
   - source: /index.html
     destination: /var/www/
+  -source: ./scripts
+    destination: /var/www/
 permissions:
   - object: /var/www/
     pattern: "*"
