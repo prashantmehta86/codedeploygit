@@ -6,6 +6,7 @@ files:
 permissions:
   - object: /var/www/
     pattern: "*"
+    except:[/var/www/scripts/]
     owner: root
     group: www-data
     mode: 777
