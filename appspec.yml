@@ -6,14 +6,14 @@ files:
   - source: ./scripts/
     destination: /var/www/
 permissions:
-  - object: /var/www/
+  - object: /var/www/scripts/
     pattern: "**"
     owner: root
     group: www-data
     mode: 777
     acls: 
       - u:www-data:rwx
-      - u:ubuntu:rwX
+      - u:ubuntu:rwx
       - m::r 
     type:
       - directory
