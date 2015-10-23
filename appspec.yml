@@ -10,7 +10,7 @@ permissions:
     pattern: "**"
     owner: root
     group: www-data
-    mode: 775
+    mode: 777
     acls: 
       - u:www-data:rwx
       - u:ubuntu:rwx
