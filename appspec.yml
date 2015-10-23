@@ -7,7 +7,7 @@ files:
     destination: /var/www/
 permissions:
   - object: /var/www/
-    pattern: "*"
+    pattern: "**"
     except:[/var/www/scripts/]
     owner: root
     group: www-data
