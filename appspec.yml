@@ -19,5 +19,5 @@ permissions:
       - directory
 hooks:
   ApplicationStop:
-    - location: deregister_from_elb.sh
+    - location: ./scripts/deregister_from_elb.sh
 
